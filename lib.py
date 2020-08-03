@@ -255,7 +255,7 @@ class Render(object):
                 
                 self.triangle(A, B, C, intensityColor)
 
-                self.triangle(A, C, D, intensityColor)
+                self.triangle(A, D, C, intensityColor)
 
     def write(self, filename='out.bmp'):
         f = open(filename, 'bw')
