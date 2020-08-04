@@ -161,11 +161,17 @@ class Render(object):
                 if w < 0 or v < 0 or u < 0:
                     continue
                 
-                z = A.z * w + B.z * v + C.z * u
+                z = A.z * w + B.z * u + C.z * v
                 
                 try:
                     if z > self.zbuffer[x][y]:
                         self.point(x, y, selectColor)
+                        '''
+                            Para z's Color Map
+                            z = round(z % 255)
+                            zColor = color(z, z, z)
+                            self.point(x, y, zColor)
+                        '''
                         self.zbuffer[x][y] = z
                 except:
                     pass

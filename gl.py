@@ -76,7 +76,9 @@ glClear()
 # Olaf
 # glLoad('./olaf.obj', V3(-250, 600, 1), V3(4, 4, 5))
 # glFinish('olafGris.bmp')
+# glFinish('zolaf.bmp')
 
 # Sid 
 glLoad('./sid.obj', V3(500, 10, 0), V3(30, 30, 100))
 glFinish('sidGris.bmp')
+# glFinish('zsid.bmp')
